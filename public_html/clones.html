@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>[ ARDUINO ] | Clones</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+        <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet'>
+    </head>
+    <body id="bg">
+        <h1 id="title">ARDUINO</h1>
+        <table id="tab">
+            <tr>
+                <td id="tab1">
+                    <a href="historia.html">História</a>
+                </td>
+                <td id="tab2">
+                    <a href="aplicacoes.html">Aplicações</a>
+                </td>
+                <td id="tab3">
+                    <a href="hw_oficial.html">Hardware Oficial</a>
+                </td>
+                <td id="tab4">
+                    <a href="clones.html">Clones</a>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4" class="main">
+                    <h1>CLONES</h1>
+                    <ol>
+                        <li class="li">Modelos Clone</li>
+                        <li class="li">Clones com bootloaders compatíveis</li>
+                        <li class="li">Placas sem ATmega</li>
+                    </ol>
+                    <br>
+                    O documento de política oficial enfatiza que o projeto é aberto para a incorporação de trabalhos paralelos no produto original, e apesar de o hardware e software serem projetados sob licenças copyleft, os desenvolvedores vem expressando um desejo de que o nome "Arduino" (ou derivados dele) seja exclusivo para o produto oficial, e não seja usado para trabalhos de terceiros sem autorização.
+                    <br>
+                    Devido a isso, um grupo de utilizadores criou um projeto alternativo, baseado na versão Diecimila, chamado de Freeduino, sendo que o nome não possui nenhum uso de direito autoral, e é livre para ser usado para qualquer fim.
+                    <br>
+                    Alguns produtos compatíveis não oficiais que obtiveram êxito em lançamentos, possuem a terminação duino como forma de se referenciar ao dispositivo da qual derivaram.
+                    <br><br>
+                    <h2>1. MODELOS CLONE</h2>
+                    <br>
+                    <p><img class="imgborder" width="400" src="img/metalab.jpg" alt="Metalab, local onde se desenvolve o Metaboard, clone do Arduino" /></p>
+                    <p><b>Metalab, local onde se desenvolve o Metaboard, clone do Arduino</b></p>
+                    <br><br>
+                    As placas a seguir são quase ou totalmente compatíveis tanto com o hardware quanto com o software do Arduino, incluindo serem capazes de aceitarem placas derivadas do mesmo.
+                    <br><br><br>
+                    <table class="newtab">
+                        <tr>
+                            <td class="tab7" width="25%">MODELO</td>
+                            <td class="tab8">DESCRIÇÃO</td>
+                        </tr>
+                        <tr>
+                            <td>BlackBoard</td>
+                            <td>Placa brasileira fabricada pela RoboCore. Utiliza o ATmega328 e é compatível com todos os shields feitos para Arduino UNO R3 e versões anteriores a ele.</td>
+                        </tr>
+                        <tr>
+                            <td>Freeduino SB</td>
+                            <td>Fabricado e vendido como mini-kit pela Solarbotics Ltd.</td>
+                        </tr>
+                        <tr>
+                            <td>Freeduino Max Serial</td>
+                            <td>Placa com porta padrão serial DB9, fabricado e vendido em pacote ou em partes pela Fundamental Logic.</td>
+                        </tr>
+                        <tr>
+                            <td>Freeduino Through-Hole</td>
+                            <td>Superfície montada, fabricada e vendida como um pacote pela NKC Electronics.</td>
+                        </tr>
+                        <tr>
+                            <td>Illuminato</td>
+                            <td>Utiliza ATMega645 ao invés de um ATMega168. Disponibiliza 64k de flash, 4K de RAM e 32 pinos gerais de E/S. O Hardware e firmware são código aberto. Projetada para ter uma aparência esbelta e tem 10 LEDs que podem ser controlados usando uma instrução "oculta" . é desenvolvida pela Liquidware.</td>
+                        </tr>
+                        <tr>
+                            <td>Metaboard</td>
+                            <td>Projetada para ter pouca complexidade e baixo preço. O hardware e firmware são código aberto. É desenvolvida pela Metalab, um hackerspace em Viena.</td>
+                        </tr>
+                        <tr>
+                            <td>Seeeduino</td>
+                            <td>Derivada da Diecimila.</td>
+                        </tr>
+                        <tr>
+                            <td>eJackino</td>
+                            <td>Pacote da CQ no Japão. Similar ao Seeeduino, podendo utilizar placa universais como os shields. Na parte de trás, há uma "estação Akihabara" de seda, parecido com o do Arduino.</td>
+                        </tr>
+                        <tr>
+                            <td>Wiseduino</td>
+                            <td>Placa microcontroladora, incluindo um relógio de tempo real (RTC) DS1307, com bateria reserva, um chip EEPROM 24LC256 e um conector para adaptadores XBee.</td>
+                        </tr>
+                        <tr>
+                            <td>Brasuino</td>
+                            <td>Baseada no arduino Uno, mas redesenhada com o software livre KiCAD. Mantém compatibilidade com o Arduino Uno original, com algumas melhorias. O hardware é licenciado como GPL. Desenvolvida, fabricada e comercializada pela Holoscópio, do Brasil.</td>
+                        </tr>
+                        <tr>
+                            <td>Funduino</td>
+                            <td>Um clone com o objetivo de ser mais barato, mantém compatibilidade com o Arduino Uno original sem muitas melhorias.</td>
+                        </tr>
+                        <tr>
+                            <td>Marminino</td>
+                            <td>Um clone Cearense de baixo custo com trilhas largas e espaçadas, utiliza um ATMEGA 328 e tem objetivo de ser custo mínimo.</td>
+                        </tr>
+                        <tr>
+                            <td>MBZ Pro Wifi</td>
+                            <td>Placa standalone brasileira, com suporte ao módulo Wifi ESP-01, conexão para RTC e área de prototipagem para soldar componentes e módulos.</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <h2>2. CLONES COM BOOTLOADERS COMPATÍVEIS</h2>
+                    <br>
+                    As placas a seguir são compatíveis com o software do Arduino mas não aceitam shields. Elas possuem diferentes conectores para energia e E/S, tais como uma série de pinos do lado de baixo da placa, facilitando assim o uso com ProtoBoards, ou para conexões mais específicas.
+                    <br><br><br>
+                    <table class="newtab">
+                        <tr>
+                            <td class="tab7" width="25%">MODELO</td>
+                            <td class="tab8">DESCRIÇÃO</td>
+                            <td class="tab9" width="30%">CHIP CONTROLADOR</td>
+                        </tr>
+                        <tr>
+                            <td>Alevino</td>
+                            <td>Módulo compacto, fabricado no Brasil pela Circuitar, com pinagem compatível com Arduino Nano e interface USB externa. Faz parte do sistema Nanoshields</td>
+                            <td>ATmega328P</td>
+                        </tr>
+                        <tr>
+                            <td>Oak Micros om328p</td>
+                            <td>Arduino Duemilanove compactado até um dispositivo que seja capaz de ser prototificada (36mm x 18mm), que pode ser inserida em um soquete padrão de 600mil e 28 pinos. Capacidade de USB e 6 LEDs embutidos</td>
+                            <td>ATmega328P</td>
+                        </tr>
+                        <tr>
+                            <td>Boarduino</td>
+                            <td>Um clone de baixo-custo da Diecimila feito para prototipagem, produzida pela Adafruit</td>
+                            <td>ATmega328P</td>
+                        </tr>
+                        <tr>
+                            <td>Bare Bones Board (BBB) e Really Bare Bones Board (RBBB)</td>
+                            <td>Compacto e de baixo-custo, próprio para prototipagem. Feito pela Modern Device</td>
+                            <td>ATmega168/328P</td>
+                        </tr>
+                        <tr>
+                            <td>iDuino</td>
+                            <td>Placa USB para prototipagem, produzida e vendida como um pacote pela Fundamental Logic</td>
+                            <td>ATmega168/328</td>
+                        </tr>
+                        <tr>
+                            <td>Sanguino</td>
+                            <td>Clone de fonte livre do arduino. Possui 64K de flash, 4K de RAM, 32 pinos de E/S gerais, um pino 40 DIP. É desenvolvido com o intuito de ser utilizado pelo Projeto RepRap</td>
+                            <td>ATmega644P</td>
+                        </tr>
+                        <tr>
+                            <td>LEDuino</td>
+                            <td>Placa reforçada com I²C, decodificador DCC e uma interface CAN-bus. Produzida utilizando montagem superficial vendida pronta pela Siliconrailway.</td>
+                            <td>NC</td>
+                        </tr>
+                        <tr>
+                            <td>Stickduino</td>
+                            <td>Placa de baixo-custo, similar a um pen drive</td>
+                            <td>ATmega168</td>
+                        </tr>
+                        <tr>
+                            <td>Roboduino</td>
+                            <td>Projetado para robótica. Todas as suas conexões são distribuídas para que os sensores e servos possam facilmente serem anexados. Entradas adicionais para energia e comunicação serial também estão disponíveis. Desenvolvida pela Curious Inventor, L.L.C.</td>
+                            <td>NC</td>
+                        </tr>
+                        <tr>
+                            <td>Wireless Widget</td>
+                            <td>Compacto (35 mm x 70 mm), Baixa voltagem, bateria de energia igual ao do Arduino, e rede sem fio capaz de alcançar até 120 metros de distância. Projetado para ser tanto portátil quanto a baixo custo, para aplicações RSSF</td>
+                            <td>ATmega168V/328P</td>
+                        </tr>
+                        <tr>
+                            <td>ZB1</td>
+                            <td>Placa que inclui Zigbee rádio (XBee). Podendo ser energizado via USB, adaptador de parede ou uma fonte de bateria externa. Projetado para baixo custo em aplicações RSSF</td>
+                            <td>ATmega168</td>
+                        </tr>
+                        <tr>
+                            <td>NB1A</td>
+                            <td>Inclui uma bateria reserva para relógio de tempo real e quatro canais DAC, sendo que a maioria dos clones de Arduino precisam de um shield para obter esta função</td>
+                            <td>ATmega328</td>
+                        </tr>
+                        <tr>
+                            <td>NB2A</td>
+                            <td>Inclui uma bateria reserva para relógio de tempo real e dois canais DAC. Possui o mesmo chip controlador do Sanguino, porém com memória adicional, linhas de E/S e um segundo UART</td>
+                            <td>ATmega644P</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <h2>3. PLACAS SEM ATMEGA</h2>
+                    <br>
+                    As seguintes placas aceitam placas extensoras para Arduino mas não utilizam os microcontroladores da ATmega. Sendo assim, eles são incompatíveis com o programa original, entretanto, por causa de terem os requerimentos para funcionar os shields, podem trabalhar com outras IDEs.
+                    <br><br><br>
+                    <table class="newtab">
+                        <tr>
+                            <td class="tab7" width="25%">MODELO</td>
+                            <td class="tab8">DESCRIÇÃO</td>
+                        </tr>
+                        <tr>
+                            <td>Colduino</td>
+                            <td>Sistema desenvolvido pela BRTOS baseada em arquitetura Freescale Coldfire V1</td>
+                        </tr>
+                        <tr>
+                            <td>ARMmitePRO</td>
+                            <td>Placa baseada em ARM, programável em BASIC ou C. Fabricada pela Coridium</td>
+                        </tr>
+                        <tr>
+                            <td>Cortino</td>
+                            <td>Sistema desenvolvido para ARM 32-bit, com um microprocessador Cortex M3</td>
+                        </tr>
+                        <tr>
+                            <td>Pinguino</td>
+                            <td>Placa baseada num microcontrolador PIC, com suporte USB nativo e programável pelo programa oficial mais um IDE construída em Python</td>
+                        </tr>
+                    </table>
+                    <br><br><br>
+                    <p><a href="index.html">[ Ir para a Página Inicial ]</a></p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4" id="tab6">
+                    Fonte: <a href="https://pt.wikipedia.org/wiki/Arduino">Arduino no Wikipedia</a> | Ligações Externas: <a href="http://www.arduino.cc/">Página Principal do Arduino</a> [em inglês] - <a href="http://www.arduino.cc/playground/">Wiki Arduino</a> [em inglês]
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

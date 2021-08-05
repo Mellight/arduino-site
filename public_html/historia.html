@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>[ ARDUINO ] | História</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+        <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet'>
+    </head>
+    <body id="bg">
+        <h1 id="title">ARDUINO</h1>
+        <table id="tab">
+            <tr>
+                <td id="tab1">
+                    <a href="historia.html">História</a>
+                </td>
+                <td id="tab2">
+                    <a href="aplicacoes.html">Aplicações</a>
+                </td>
+                <td id="tab3">
+                    <a href="hw_oficial.html">Hardware Oficial</a>
+                </td>
+                <td id="tab4">
+                    <a href="clones.html">Clones</a>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4" class="main">
+                    <h1>HISTÓRIA</h1>
+                    <ol>
+                        <li class="li">Hardware</li>
+                        <li class="li">Software</li>
+                    </ol>
+                    <br>
+                    O projeto iniciou-se na cidade de Ivrea, Itália, em 2005, com o intuito de interagir em projetos escolares de forma a ter um orçamento menor que outros sistemas de prototipagem disponíveis naquela época. O sucesso foi sinalizado com o obtenção de uma menção honrosa na categoria Comunidades Digitais em 2006, pela Prix Ars Electronica, além da marca de mais de 50.000 placas vendidas até outubro de 2008.
+                    <br><br>
+                    Atualmente, o seu hardware é feito através de um microcontrolador Atmel AVR, sendo que este não é um requisito formal e pode ser estendido se tanto ele quanto a ferramenta alternativa suportarem a linguagem arduino e forem aceites pelo seu projeto. Considerando esta característica, muitos projetos paralelos inspiram-se em cópias modificadas com placas de expansões, e acabam recebendo os seus próprios nomes.
+                    <br><br>
+                    <h2>1. HARDWARE</h2>
+                    <br>
+                    <p><img class="imgborder" width="300" src="img/arduino_breadboard.jpeg" alt="Arduino conectado a uma protoboard" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img class="imgborder" width="300" src="img/arduino_ftdi_chip.jpg" alt="FTDI acoplado em um Arduino NG" /></p>
+                    <p><b>Arduino conectado a uma protoboard &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FTDI acoplado em um Arduino NG</b></p>
+                    <br><br>
+                    A sua placa consiste num microcontrolador Atmel AVR de 8 bits, com componentes complementares para facilitar a programação e incorporação noutros circuitos. Um importante aspecto é a maneira padrão como os conectores são expostos, permitindo o CPU ser interligado a outros módulos expansivos, conhecidos como shields. Os Arduinos originais utilizam a série de chips megaAVR, especialmente os ATmega8, ATmega168, ATmega328 e a ATmega1280; porém muitos outros processadores foram utilizados por clones deles.
+                    <br>
+                    A grande maioria de placas inclui um regulador linear de 5 volts e um oscilador de cristal de 16 MHz (podendo haver variantes com um ressonador cerâmico), embora alguns esquemas como o LilyPad usem até 8 MHz e dispensem um regulador de tensão embutido, por terem uma forma específica de restrições de fator. Além de ser microcontrolador, o componente também é pré-programado com um bootloader, o que simplifica o carregamento de programas para o chip de memória flash embutido, em comparação com outros aparelhos que geralmente demandam um chip programador externo.
+                    <br>
+                    Conceptualmente, quando o seu software é utilizado, ele monta todas as placas sobre uma programação de conexão serial RS-232, mas a forma de implementação no hardware varia em cada versão. As suas placas de serie contêm um simples circuito inversor para converter entre os sinais dos níveis RS-232 e TTL. Atualmente, existem alguns métodos diferentes para realizar a transmissão dos dados, como por placas programáveis via USB, adicionadas através de um chip adaptador USB-para-Serial, como o FTDI FT232. Algumas variantes, como o Arduino Mini e o não oficial Boarduino, usam um módulo, cabo adaptador USB, bluetooth ou outros métodos. Nestes casos, são usados com ferramentas microcontroladoras ao invés do Arduino IDE, utilizando assim a programação padrão AVR ISP.
+                    <br>
+                    A maioria dos pinos de E/S dos microcontroladores são para uso de outros circuitos. A versão Diecimila, que substituiu a Duemilanove, por exemplo, disponibiliza 14 pinos digitais, 6 das quais podem produzir sinais MLP, além de 6 entradas analógicas. Estes estão disponíveis em cima da placa, através de conectores fêmeas de 0,1 polegadas (ou 0,25 centímetros).
+                    <br>
+                    O modelo Nano, Boarduino e placas compatíveis com estas, fornecem conectores machos na parte de baixo da placa, para serem conectados em protoboards.
+                    <br><br>
+                    <h2>2. SOFTWARE</h2>
+                    <br>
+                    <p><img class="imgborder" width="300" src="img/arduino_ide_alpha.png" alt="Tela do Arduino IDE mostrando um simples programa exemplo" /></p>
+                    <p><b>Tela do Arduino IDE mostrando um simples programa exemplo</b></p>
+                    <br><br>
+                    O Arduino IDE é uma aplicação multiplataforma escrita em Java derivada dos projetos Processing e Wiring. É esquematizado para introduzir a programação para artistas e para pessoas não familiarizadas com o desenvolvimento de software. Inclui um editor de código com recursos de realce de sintaxe, parênteses correspondentes e identação automática, sendo capaz de compilar e carregar programas para a placa com um único clique. Com isso não há a necessidade de editar Makefiles ou rodar programas em ambientes de linha de comando.
+                    <br>
+                    Tendo uma biblioteca chamada "Wiring", ele possui a capacidade de programar em C/C++. Isto permite criar com facilidade muitas operações de entrada e saída, tendo que definir apenas duas funções no pedido para fazer um programa funcional:
+                    <br><br>
+                    <b>setup()</b> – Inserida no início, na qual pode ser usada para inicializar configuração, e
+                    <br>
+                    <b>loop()</b> – Chamada para repetir um bloco de comandos ou esperar até que seja desligada.
+                    <br><br>
+                    O Arduino IDE usa o Conjunto de ferramentas GNU e o AVR Libc para compilar os programas, para depois, com o avrdude, enviar os programas para a placa.
+                    <br><br><br>
+                    <p><a href="index.html">[ Ir para a Página Inicial ]</a></p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4" id="tab6">
+                    Fonte: <a href="https://pt.wikipedia.org/wiki/Arduino">Arduino no Wikipedia</a> | Ligações Externas: <a href="http://www.arduino.cc/">Página Principal do Arduino</a> [em inglês] - <a href="http://www.arduino.cc/playground/">Wiki Arduino</a> [em inglês]
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
